@@ -6,10 +6,10 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 database_uri = 'postgresql+psycopg2://{dbuser}:{dbpass}@{dbhost}/{dbname}'.format(
-    dbuser=os.environ['DBUSER'],
-    dbpass=os.environ['DBPASS'],
-    dbhost=os.environ['DBHOST'],
-    dbname=os.environ['DBNAME']
+    dbuser='sgbytes@',
+    dbpass='Password123',
+    dbhost='sgbytes-postgresql.postgres.database.azure.com',
+    dbname='sgbytes-postgresql'
 )
 
 app = Flask(__name__)
